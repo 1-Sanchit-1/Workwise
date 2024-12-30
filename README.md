@@ -132,4 +132,9 @@ The Train Seat Booking System allows users to:
 - **Live Frontend**: [Frontend on Vercel](https://workwise-e4nq.vercel.app/)
 - **Live Backend**: [Backend on Render](https://workwise-backend-zf1b.onrender.com/)
 
+## Screen Recording
+https://github.com/user-attachments/assets/f3302f24-be99-49fc-a270-f5fb6c296ef0
+
+
+
 ---

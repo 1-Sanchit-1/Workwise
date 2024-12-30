@@ -1,3 +1,5 @@
+## Seat Booking Logic
+
 **Validate Input**:
 
 - Ensure `numOfSeats` is a positive number.
@@ -44,14 +46,13 @@
    **Controller**: `signupController`  
    **Description**: Registers a new user with email and password.  
    **Request Body**:
+
    ```json
    {
      "email": "user@example.com",
      "password": "securepassword"
    }
    ```
-
-````
 
 2. **Login**
    **Endpoint**: `POST /login`
@@ -763,5 +764,3 @@
 - **dotenv**: For managing environment variables.
 
 ---
-
-````

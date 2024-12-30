@@ -58,8 +58,6 @@ const handleError = (error) => {
 };
 ```
 
-```
-
 ---
 
 ## Dependencies
@@ -70,5 +68,3 @@ const handleError = (error) => {
 - **dotenv**: For environment variable management.
 
 ---
-
-```

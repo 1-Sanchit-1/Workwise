@@ -56,11 +56,10 @@ The Train Seat Booking System allows users to:
 ### Backend Setup
 
 1. Navigate to the backend directory:
+
    ```bash
    cd Backend
    ```
-
-````
 
 2. Install dependencies:
    ```bash
@@ -134,5 +133,3 @@ The Train Seat Booking System allows users to:
 - **Live Backend**: [Backend on Render](https://workwise-backend-zf1b.onrender.com/)
 
 ---
-
-````

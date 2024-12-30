@@ -124,6 +124,7 @@ The Train Seat Booking System allows users to:
 - **Email**: [sanchitguptaiiitl@gmail.com](mailto:sanchitguptaiiitl@gmail.com)
 - **GitHub**: [1-Sanchit-1](https://github.com/1-Sanchit-1)
 
+
 ---
 
 ## Project Links
@@ -133,8 +134,7 @@ The Train Seat Booking System allows users to:
 - **Live Backend**: [Backend on Render](https://workwise-backend-zf1b.onrender.com/)
 
 ## Screen Recording
-https://github.com/user-attachments/assets/f3302f24-be99-49fc-a270-f5fb6c296ef0
-
+https://github.com/user-attachments/assets/edfd3a32-e858-483f-b671-4bf152f0f0be
 
 
 ---

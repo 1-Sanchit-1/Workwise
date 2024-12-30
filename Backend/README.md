@@ -1,37 +1,37 @@
-````markdown
----
-
-## Hints for Seat Booking Logic
-
 **Validate Input**:
-   - Ensure `numOfSeats` is a positive number.
-   - Reject requests for more than 7 seats with an appropriate error message.
+
+- Ensure `numOfSeats` is a positive number.
+- Reject requests for more than 7 seats with an appropriate error message.
 
 **Retrieve Available Seats**:
-   - Fetch all unbooked seats (`isBooked: false`) from the database.
-   - Sort seats by `rowNumber` and `seatNumber` for logical ordering.
+
+- Fetch all unbooked seats (`isBooked: false`) from the database.
+- Sort seats by `rowNumber` and `seatNumber` for logical ordering.
 
 **Check Availability**:
-   - If the number of available seats is less than the requested `numOfSeats`, reject the request with the available seat count.
+
+- If the number of available seats is less than the requested `numOfSeats`, reject the request with the available seat count.
 
 **Prioritize Same Row Allocation**:
-   - Loop through each row.
-   - Check if the row has enough unbooked seats to satisfy the request.
-   - If yes, select those seats and stop searching.
+
+- Loop through each row.
+- Check if the row has enough unbooked seats to satisfy the request.
+- If yes, select those seats and stop searching.
 
 **Fallback to Nearby Allocation**:
-   - If no single row has enough seats, pick the closest `numOfSeats` seats from the sorted list.
+
+- If no single row has enough seats, pick the closest `numOfSeats` seats from the sorted list.
 
 **Mark Seats as Booked**:
-   - Update the selected seats in the database to `isBooked: true` and associate them with the user.
-   - Double-check seat availability during the update to avoid race conditions.
+
+- Update the selected seats in the database to `isBooked: true` and associate them with the user.
+- Double-check seat availability during the update to avoid race conditions.
 
 **Update User’s Booking History**:
-   - Append the newly booked seats to the user's booking record.
 
-**Respond to the User**:
-    - If successful, return a success message with the booked seat details.
-    - If an error occurs, send an appropriate error response.
+- Append the newly booked seats to the user's booking record.
+
+**Respond to the User**: - If successful, return a success message with the booked seat details. - If an error occurs, send an appropriate error response.
 
 ---
 
@@ -50,12 +50,13 @@
      "password": "securepassword"
    }
    ```
+
 ````
 
-2. **Login**  
-   **Endpoint**: `POST /login`  
-   **Controller**: `loginController`  
-   **Description**: Authenticates a user and returns a JWT token and user role.  
+2. **Login**
+   **Endpoint**: `POST /login`
+   **Controller**: `loginController`
+   **Description**: Authenticates a user and returns a JWT token and user role.
    **Request Body**:
    ```json
    {
@@ -68,10 +69,10 @@
 
 ### **Seat Management**
 
-1. **Get Seats**  
-   **Endpoint**: `GET /seats`  
-   **Controller**: `getSeats`  
-   **Description**: Retrieves all seat data, including availability and booking status.  
+1. **Get Seats**
+   **Endpoint**: `GET /seats`
+   **Controller**: `getSeats`
+   **Description**: Retrieves all seat data, including availability and booking status.
    **Authentication Required**: Yes (Any user).
 
 ```GET /seats
@@ -721,11 +722,11 @@
 }
 ```
 
-2. **Book Seats**  
-   **Endpoint**: `POST /seats/book`  
-   **Controller**: `bookingController`  
-   **Description**: Books the specified number of seats.  
-   **Authentication Required**: Yes (Roles: `user`, `admin`).  
+2. **Book Seats**
+   **Endpoint**: `POST /seats/book`
+   **Controller**: `bookingController`
+   **Description**: Books the specified number of seats.
+   **Authentication Required**: Yes (Roles: `user`, `admin`).
    **Request Body**:
 
    ```json
@@ -734,10 +735,10 @@
    }
    ```
 
-3. **Reset Seats**  
-   **Endpoint**: `POST /seats/reset`  
-   **Controller**: `resetSeatsController`  
-   **Description**: Resets all seat bookings (admin-only).  
+3. **Reset Seats**
+   **Endpoint**: `POST /seats/reset`
+   **Controller**: `resetSeatsController`
+   **Description**: Resets all seat bookings (admin-only).
    **Authentication Required**: Yes (Role: `admin`).
 
 ---
@@ -747,7 +748,7 @@
 ### `auth(roles)`
 
 - Validates the JWT token provided in the `Authorization` header.
-- Ensures the user has the required role to access the endpoint.  
+- Ensures the user has the required role to access the endpoint.
   **Roles**:
   - `"user"`: General users who can book seats.
   - `"admin"`: Admin users who can manage seat bookings (e.g., reset seats).
@@ -763,6 +764,4 @@
 
 ---
 
-```
-
-```
+````

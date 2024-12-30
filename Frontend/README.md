@@ -1,6 +1,3 @@
-````markdown
----
-
 ## **Authentication Handlers**:
 
 - `const handleLogin = () => {}`: Handles user login, stores token and role, and displays success or error messages.
@@ -60,7 +57,8 @@ const handleError = (error) => {
   console.error("Error:", error);
 };
 ```
-````
+
+```
 
 ---
 
@@ -72,7 +70,5 @@ const handleError = (error) => {
 - **dotenv**: For environment variable management.
 
 ---
-
-```
 
 ```

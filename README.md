@@ -1,15 +1,17 @@
-````markdown
----
 ## Table of Contents
+
 1. [Problem Description](#problem-description)
 2. [Features](#features)
 3. [Built With](#built-with)
 4. [Installation and Setup](#installation-and-setup)
+
 - [Backend Setup](#backend-setup)
 - [Frontend Setup](#frontend-setup)
+
 5. [Usage](#usage)
 6. [Contact](#contact)
 7. [Project Links](#project-links)
+
 ---
 
 ## Problem Description
@@ -57,6 +59,7 @@ The Train Seat Booking System allows users to:
    ```bash
    cd Backend
    ```
+
 ````
 
 2. Install dependencies:
@@ -132,6 +135,4 @@ The Train Seat Booking System allows users to:
 
 ---
 
-```
-
-```
+````
